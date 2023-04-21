@@ -44,7 +44,7 @@ const lightbox = new SimpleLightbox('.gallery a', {
 
   const Event = (event) => {
     event.preventDefault();
-    if(event.target.nodeName !== 'IMG') {
+    if(event.target.type !== 'IMG') {
       return;
     }
 
